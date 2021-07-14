@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databank</title>
+    <link rel="stylesheet" type="text/css" href="css/styles14.css">
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="contenido-header">
+                <div class="btn-menu">
+                    <label for="btn-menu"><span class="icon icon-menu">o</span></label>
+                </div>
+                <a href="index.html">
+                    <h2 class="titulo1"><span class="icon">#</span> Databank</h2>
+                </a>
+                <nav id="navegador">
+                    <ul>
+                        <li><a class="inicio" href="index.html"><span class="icon">Z </span>Inicio</a></li>
+                        <li><a class="trabajos"><span class="icon">. </span> Solicitar Producto</a>
+                            <ul>
+                                <li><a href="solicitar_prestamo.html"><span class="icon">R </span>Solicitar Prestamo</a>
+                                </li>
+                                <li><a href="solicitar_TC.html"><span class="icon">R </span>Solicitar TC</a></li>
+                                <li><a href="solicitar_TD.html"><span class="icon">R </span>Solicitar TD</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="conocimientos" href="Estado_Crediticio.html"><span class="icon">R </span>Estado Crediticio</a></li>
+                        <li><a class="contactos" href="Comparar_Entidades.html"><span class="icon">u </span>Comparar Entidades Financieras</a></li>
+                        <li><a class="contactos" href="mis_reuniones.html"><span class="icon">P </span>Mis reuniones</a></li>   
+
+                    </ul>
+                </nav>
+                <a href="index.html">
+                    <h2 class="titulo2"><span class="icon">U</span> Augusto Facho</h2>
+                </a>
+
+
+            </div>
+        </header>
+
+        <div class="clearfix"></div>
+                      
+
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="mis_reuniones.html">Mis Reuniones</a>
+                    <a href="calendario.html">Calendario</a>
+                    <a href="gestionar_financieros.html">Gestión Productos Financieros</a>                   
+                </nav>
+                </div>             
+        </div>
+
+        <div id="titulo_section">
+            <h1 style="color: rgb(77, 76, 76); ">Gestión de Tarjeta de Débito Solicitados</h1>
+            <h2>Bienvenid@ al panel de Gestión de Tarjeta de Débito. Has encontrado un total de (0) solicitudes pendientes.</h2>
+        </div>
+        <div class="buscar" style="background-color: white; width: 400px; padding: 10px; border-radius: 20px; border: 2px solid rgb(54, 50, 50) !important; margin-left: 230px; margin-top: 30px;"> 
+            <span class="icon">L</span> Buscar...
+        </div>
+        <section id="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entidad Financiera</th>
+                        <th>Nro.Sol TD</th>
+                        <th>Cliente</th>
+                        <th>Ver Detalle</th>    
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><img class="imagentable" src="img/scb.png"></td>
+                    <td>SBP-P001</td>
+                    <td>Brian Aguirre Carbajal</a></td>
+                    <td><a href="#"><img class="imagentable2" src="img/lupaa.png"></a></td>
+                    <td><a href="#"><input id="btn-abrir-popup3" class="reunion" type="submit" value="Agendar Reunion"></a><input type="submit" id="btn-abrir-popup"
+                        class="solicitud btn-abrir-popup" value="Derivar Ahora"></td>
+                </tr>
+                <tr>
+                    <td><img class="imagentable" src="img/scb.png"></td>
+                    <td>SBP-P001</td>
+                    <td>Arantxa de La Fuente</td>
+                    <td><a href="#"><img class="imagentable2" src="img/lupaa.png"></a></td>
+                    <td><a href="#"><input id="btn-abrir-popup4" class="reunion btn-abrir-popup2" type="submit" value="Agendar Reunion"></a><input type="submit" id="btn-abrir-popup2"
+                            class="solicitud btn-abrir-popup2" value="Derivar Ahora"></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <a href="gestionar_financieros.html" style="margin-left: 610px;"><span class="icon">h</span>Volver atrás</a>
+            <div class="clearfix"></div>
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><span class="icon">'</span></a>
+                    <h2>SOLICITUD DERIVADA</h3>
+                    <br>
+                    <p>¡Has derivado una solicitud de Tarjeta de Débito con éxito!</p>
+                    <p>En estos momentos se enviará un correo con toda la información y</p>
+                    <p>detalles a su email laboral de <b>Scotiabank.</b></p>
+                    <p>En caso no hayas recibidoel correo en los próximos minutos, por favor</p>
+                    <p>revisar la carpeta <b>Spam</b> o de click en <a>Reenviar Ahora.</a></p>
+                    <br>
+                    <button id="button3">¡Muchas gracias!</button>
+                    <br>
+                    <p>De existir algún inconveniente por favor comunicarse a los</p>
+                    <p>siguientes números o correo:</p>
+                    <br>
+
+                    <h4>Email: databank_support@outlook.com</h4>
+                    <h4>Cel:   987456122</h4>
+                </div>
+            </div>
+
+            <div class="overlay2" id="overlay2">
+                <div class="popup2" id="popup2">
+                    <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><span class="icon">'</span></a>
+                    <h2>AGENDAR REUNION</h3>
+                    <br>
+                    <p>Nombre de la Sesión</p>
+                    <input type="text" style="margin-bottom: 15px !important; margin-top: 10px !important; padding: 10px; width: 70%;" placeholder="Ingresa el nombre de la Reunión">
+                    <br>
+                    <p>Selecciona la fecha para la reunión:</p>
+                    <br>
+                    <input type="date" style="margin-bottom: 15px !important;">	
+                    <br>                    
+                    <p>Selecciona la hora <b>Inicio</b> para la reunión:</p>
+                    <br>
+                    <input type="time" style="margin-bottom: 15px !important;">	
+                    <br>
+                    <p>Selecciona la hora <b>Fin</b> para la reunión:</p>
+                    <br>
+                    <input type="time" style="margin-bottom: 15px !important;">	
+                    <p>Recuerda que en caso el cliente no se encuentre disponible a la fecha</b></p>
+                    <p>y hora propuesta puedes reprogramar la reunión en la sección: <b>Mis Reuniones</b></p>
+                    <br>
+                    <p>Para concretar una reunión y lograr agendarla debes derivarla, así el cliente</p>
+                    <p>y el operario de Banco tendrán un consolidado de la reunión con los detalles.</p>
+                    <br>
+                    <button id="button2">Confirmar Reunión</button>
+                    <p>De existir algún inconveniente por favor comunicarse a los</p>
+                    <p>siguientes números o correo:</p>
+                    <br>
+
+                    <h4>Email: databank_support@outlook.com</h4>
+                    <h4>Cel:   987456122</h4>
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <div class="clearfix">
+        </div>
+        <span class="arriba">}</span>
+
+        <footer id="footer">
+            <p>Web desarollada por Augusto Facho. &copy; 2021</p>
+        </footer>
+    </div>
+    <script src="js/script_popup2.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

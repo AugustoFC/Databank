@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databank</title>
+    <link rel="stylesheet" type="text/css" href="css/styles17.css">
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="contenido-header">
+                <a href="index.html">
+                    <h2 class="titulo1"><span class="icon">#</span> Databank</h2>
+                </a>
+                <nav id="navegador">
+                    <ul>
+                        <li><a class="inicio" href="index.html"><span class="icon">Z </span>Inicio</a></li>
+                        <li><a class="trabajos"><span class="icon">. </span> Solicitar Producto</a>
+                            <ul>
+                                <li><a href="solicitar_prestamo.html"><span class="icon">R </span>Solicitar Prestamo</a></li>
+                                <li><a href="solicitar_TC.html"><span class="icon">R </span>Solicitar TC</a></li>
+                                <li><a href="solicitar_TD.html"><span class="icon">R </span>Solicitar TD</a></li>
+                            </ul>
+                        </li>
+
+                      
+                        <li><a class="conocimientos" href="Estado_Crediticio.html"><span class="icon">R </span>Estado Crediticio</a></li>
+                        <li><a class="contactos" href="Comparar_Entidades.html"><span class="icon">u </span>Comparar Entidades Financieras</a></li>
+                        <li><a class="contactos" href="mis_reuniones.html"><span class="icon">P </span>Mis reuniones</a></li>   
+
+                    </ul>
+                </nav>
+                <a href="index.html">
+                    <h2 class="titulo2"><span class="icon">U</span> Augusto Facho</h2>
+                </a>
+
+                
+            </div>
+        </header>
+       
+        <div class="clearfix"></div>
+        <div id="titulo_section">
+        <a href="index.html"><span class="icon">h</span>Ir a la página principal</a>
+            <h1>Compara Préstamos y selecciona la mejor opción para ti.</h1>
+            <h2>Ingresa los campos requeridos para calcular tu préstamo con nuestro simulador.</h2>
+        </div>
+        <section id="contenedor">        
+            <label class="labels">Documento:</label>
+            <input type="text" class="disabled" placeholder="72357322" disabled>
+
+            <label class="labels">Nombres:</label>
+            <input type="text" class="disabled" placeholder="Augusto Leonidas" disabled>
+
+            <label class="labels">Apellidos:</label>
+            <input type="text" class="disabled" placeholder="Facho Pachas" disabled>
+
+            <label class="labels">Tipo de Préstamo:</label>
+            <select class="controls">
+                <option selected="selected">Préstamos Personales</option>
+                <option>Préstamos Rápidos</option>                
+                <option>Préstamos Automovilísticos</option>
+                <option>Préstamos Hipotecarios</option>                
+            </select>
+
+            <label class="labels">Monto:</label>
+            <input type="number" class="controls" placeholder="Ingrese el monto a solicitar">
+
+            <label class="labels">Plazos:</label>
+            <select class="controls">
+                <option selected="selected">De 12 a 24 Meses</option>
+                <option>De 16 a 32 Meses</option>                
+                <option>De 24 a 48 Meses</option>               
+            </select> 
+            
+            <label class="labels">Ingresos:</label>
+            <input type="number" class="controls" placeholder="Ingrese sus ingresos mensuales">            
+
+            <label class="labels">Celular:</label>
+            <input type="number" class="controls" placeholder="Ingrese su número telefónico">
+
+            <label class="labels">Correo:</label>
+            <input type="email" class="controls" placeholder="Ingrese su correo electrónico">
+
+            <label class="labels">Departamento:</label>
+            <select class="controls">
+                <option>Amazonas</option>
+                <option>Ancash</option>
+                <option>Apurimac</option>
+                <option>Arequipa</option>
+                <option>Ayacucho</option> 
+                <option>Cajamarca</option> 
+                <option>Cusco</option> 
+                <option>Huancavelica</option> 
+                <option>Huanuco</option> 
+                <option>Ica</option> 
+                <option>Junin</option> 
+                <option>La Libertad</option> 
+                <option>Lambayeque</option> 
+                <option selected="selected">Lima/Callao</option> 
+                <option>Loreto</option> 
+                <option>Madre de Dios</option> 
+                <option>Moquegua</option> 
+                <option>Pasco</option> 
+                <option>Piura</option> 
+                <option>Puno</option> 
+                <option>San Martin</option> 
+                <option>Tacna</option> 
+                <option>Tumbes</option> 
+                <option>Ucayali</option> 
+            </select>
+
+            <label class="labels">Provincia:</label>
+            <select class="controls">
+                <option>Barranca</option>
+                <option selected="selected">Callao</option>
+                <option>Cajatambo</option>
+                <option>Cañete</option>
+                <option>Canta</option> 
+                <option>Huaral</option> 
+                <option>Huarochirí</option> 
+                <option>Huara</option>                 
+                <option>Lima</option> 
+            </select>
+
+            <label class="labels">Distrito:</label>
+            <select class="controls">
+                <option selected="selected">Bellavista</option>
+                <option selected="selected">Callao</option>
+                <option>La Perla</option>
+                <option>La Punta</option>
+                <option>Carmen de la Legua Reynoso</option>
+                <option>Mi Perú</option>
+                <option>Ventanilla</option> 
+            </select>
+
+            <label class="labels">He leido y acepto Terminos y Condiciones y Política de Privacidad</label>
+            <input type="checkbox"> 
+
+            <a href="Respuesta_Comparar_Entidad.html"><input type="submit" class="button" value="COMPARA AHORA!"></a>
+
+
+
+
+
+            
+
+        </section>
+
+        <div class="clearfix">
+        </div>
+        <span class="arriba">}</span>
+
+        <footer id="footer">
+            <p>Web desarollada por Augusto Facho. &copy; 2021</p>
+        </footer>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>

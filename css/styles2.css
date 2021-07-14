@@ -1,0 +1,911 @@
+@font-face{
+    font-family: "WebSymbolRegular";
+    src:url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+        url("fonts/websymbols-regular-webfont.eot");
+    src:url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype");        
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*ESTILOS GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('../img/fondo.png'); 
+
+}
+
+
+.icon,
+.iconarriba,
+.arriba{
+    font-family: "WebSymbolRegular";    
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.arriba {
+	padding:10px;
+	font-size:50px;
+    background-color: rgb(235, 226, 226, 0.5);
+    border-radius: 10px;
+	color:black;
+	cursor:pointer;
+	position: fixed;
+	bottom:60px;
+	right:30px;
+
+}
+
+/*SCROLLBAR*/
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgba(121, 118, 118, 0.6);
+}
+
+/*CABECERA*/
+#header {
+    background-color: rgb(43, 160, 255);
+    height: 50px;
+    box-shadow: 0px 0px 3px black;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 100;
+
+}
+
+#contenido-header{
+    float: left;
+    height: 50px;
+
+}
+#contenedor .solicitar-boton{
+    margin-left: 10px;
+}
+
+
+.solicitar-boton:hover{
+    cursor: pointer !important;
+    background-color: rgb(8, 98, 8);
+}
+
+
+#contenido-header .titulo1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 20px;
+    float: left;
+}
+#contenido-header .titulo2 {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;    
+    margin-top: -55px;
+    margin-left: 1350px;
+    float: right;
+    margin-right: 10px;
+}
+
+#contenido-imagen{
+    float: left;
+    margin: 0px auto;
+    width: 100%;
+}
+
+#contenido-imagen img{
+    width: 100%; 
+    height: auto;       
+    border-bottom: 2px solid gray;
+    box-shadow: 0px 0px 3px rgb(46, 167, 236);
+}
+/*Navegador*/
+
+
+#navegador{   
+    float: right;
+    height: 50px;
+    margin-top: 3px;
+}
+
+#navegador ul{
+    margin-top: 5px;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1650px;
+}
+
+#navegador ul li{
+    display: inline-block;
+    line-height: 45px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#navegador ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+    cursor: pointer;
+    
+}
+
+#navegador ul li ul {
+    position: absolute;
+    min-width: 140px;
+    display: none;
+}
+
+#navegador ul li ul li {
+    display: block;
+    width: 210px;
+    background-color: rgb(46, 167, 236);
+
+}
+
+#navegador ul li ul li a {
+    font-size: 18px !important;
+}
+
+#navegador li:hover > ul{
+    display: block;
+}
+
+#navegador ul li a:hover{
+    color: rgb(115, 151, 235);
+    transition: all 300ms;
+    
+}
+#navegador ul li a:active{
+    color: rgb(66, 92, 153);
+    font-size: 19px;
+    transition: all 300ms;
+    
+}
+
+/*Contenedor*/
+#titulo_section{
+    margin-top: 100px !important ;
+    margin-left: 210px;
+}
+
+#titulo_section h1{
+    color: rgb(59, 57, 57);
+    margin-right: 120px;
+    text-align: center;
+}
+
+#contenedor{
+    margin-top: 20px !important;
+    margin-left: 100px;
+    width: 1200px;
+    background-color: rgba(122, 117, 117, 0.6);
+    margin: auto;
+    padding: 20px 30px;
+    border-top: 4px solid rgb(43, 160, 255);
+    color: white;   
+    margin-bottom: 50px;
+
+}
+
+#contenedor .labels{
+    width: 100%;
+    font-weight: bold;
+}
+
+#contenedor .controls{
+    width: 100%;
+    border: 2px solid rgb(43, 160, 255);
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#contenedor .button{
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;    
+    background-color: rgb(50, 158, 17);
+    border: 2px solid rgb(50, 158, 17);
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+#contenedor .button:hover{    
+    background-color: rgb(43, 119, 20);
+    border: 2px solid rgb(43, 119, 20);
+
+    cursor: pointer;    
+}
+
+#contenedor .disabled{
+    background-color: rgba(241, 237, 237, 0.733) !important;
+    width: 100%;
+    border: 2px solid rgb(43, 160, 255);
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#contenedor a {
+    margin-left: -100px;
+    color: blue;
+    font-weight: bold;
+
+}
+
+#contenedor h1 {
+    margin-left: -100px;
+    margin-top: 10px;
+    font-size: 40px;
+    color: rgb(102, 96, 96);
+}
+
+
+#contenedor .info h1 {
+    margin-top: 25px !important;
+    margin: 0px auto;
+    color: rgb(78, 71, 71);
+    width: 391px;
+    font-size: 40px;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    transition: all 300ms;
+    text-align: center;
+    
+}
+
+#contenedor .info h4 {
+    margin-top: 20px !important;
+    margin: 0px auto;
+    text-align: center;
+    color: rgb(78, 71, 71);
+    width: 660px;    
+    letter-spacing: 1px;
+    transition: all 300ms;
+    
+}
+
+.card{    
+    width: 364px;
+    height: 305px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+    margin: 17px;
+    background-color: white;
+    margin-top: 40px;
+    float: left;
+    transition: all 300ms;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 300ms ease-out;
+
+}
+.card .capa{
+    color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 14, 14, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.card .capa h2, h3{
+    color: white;
+    transition: all 300ms;
+
+}
+
+.card .capa .icondetalle{
+    font-family: "WebSymbolRegular";        
+
+}
+
+.card .links{
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.card .links a{    
+    margin-top: 10px ;
+    color: white;
+    text-decoration: none;
+}
+
+
+.card:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+}
+
+.card:hover > .capa h2{
+    margin-top: 100px;
+    transition: all 500ms;
+    color: rgb(115, 151, 235);
+}
+
+.card:hover > .capa h3{
+    transition: all 500ms;
+    color: yellow;
+}
+
+.card:hover > .capa .links{
+    margin-top: 10px;
+    transition: all 500ms;
+
+}
+
+.card:hover > .capa .links a{
+    color: rgb(223, 102, 245);
+    font-weight: bold;
+
+}
+
+.card .capa .links a:hover{
+    font-size: 20px;
+    transition: all 300ms;   
+
+}
+
+.card .capa .links a:active{
+    font-size: 14px;
+
+}
+
+.skills{    
+   width: 1200px;
+   margin: 0px auto;   
+}
+
+.skills h1{
+    margin-top: 85px !important;
+    margin: 0px auto;
+    color: rgb(78, 71, 71);
+    width: 330px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    transition: all 300ms;
+    text-align: center;
+
+}
+
+.skills h4{
+    margin-top: 20px !important;
+    margin: 0px auto;
+    color: rgb(78, 71, 71);
+    width: 660px;    
+    letter-spacing: 1px;
+    text-align: center;
+
+    transition: all 300ms;
+
+}
+
+
+.card-skill{    
+    width: 364px;
+    height: 188px;
+    border-radius: 10px;    
+    overflow: hidden;
+    margin: 17px;
+    margin-top: 40px;
+    float: left;
+    transition: all 300ms;
+    position: relative;
+    text-align: center;
+}
+
+.card-skill img {    
+    margin-top: 20px;    
+    height: 100px;
+    width: 100px; 
+}
+.card-skill h4 {    
+    width: 100px; 
+    letter-spacing: 0px;
+}
+.card-skill p{    
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contacto h1{
+    margin-top: 85px !important;
+    margin: 0px auto;
+    color: rgb(78, 71, 71);
+    width: 330px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    transition: all 300ms;
+    text-align: center;
+}
+.contacto h4{
+    margin-top: 20px !important;
+    margin: 0px auto;
+    color: rgb(78, 71, 71);
+    width: 660px;    
+    letter-spacing: 1px;
+    transition: all 300ms;
+    text-align: center;
+
+
+}
+
+.card-contacto{    
+    width: 364px;
+    height: 305px;
+    border-radius: 10px;   
+    overflow: hidden;
+    margin: 17px;
+    margin-top: 40px;
+    float: left;
+    transition: all 300ms;
+    position: relative;
+    text-align: center;
+}
+
+
+.card-contacto img {    
+    margin-top: 20px;    
+    height: 100px;
+    width: 100px; 
+}
+
+.card-contacto a{
+    text-decoration: none;
+}
+.card-contacto h3{    
+    margin-top: 10px;
+    color: rgb(51, 47, 47);   
+}
+
+
+/*FOOTER*/
+#footer{
+    background-color: rgb(51, 48, 48);
+    height: 50px;
+    box-shadow: 0px 0px 3px black;
+
+}
+
+#footer p{
+    margin: 0px auto;
+    color: white;
+    font-weight: bold;
+    width: 340px;
+    padding: 15px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.cardimagen:hover{
+    opacity: 0.8;
+    transition: all 300ms;
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 1532px){
+    #contenido-header .titulo2{
+        display: none;
+    }
+    #navegador ul{
+        margin-top: 5px;
+        text-decoration: none;
+        margin: 0px auto;
+        width: 790px;
+        margin-left: 110px;
+        
+    }
+}
+
+@media (max-width: 1430px){
+    #contenido-header .titulo2{
+        display: none;
+    }
+    #navegador ul{
+        margin-top: 5px;
+        text-decoration: none;
+        margin: 0px auto;
+        width: 790px;
+        margin-left: 110px;
+        
+    }
+}
+
+@media (max-width: 1201px){
+    #contenido-imagen{
+        width: 1370px;
+    }
+  
+    #contenedor{
+        margin-left: 135px;
+    }    
+
+    #contenedor .info h1 {
+        width: 391px;
+        margin-left: 355px;
+    }
+    #contenedor .info h4 {
+        width: 750px;
+        
+    }
+
+    #contenedor .skills h1 {
+        width: 391px;
+        margin-left: 355px;
+    }
+    #contenedor .skills h4 {
+        width: 750px;
+        
+    }
+    
+    #contenedor .contacto h1 {
+        width: 351px;
+        margin-left: 335px;
+    }
+    #contenedor .contacto h4 {
+        width: 750px;
+        
+    }
+    .card {
+        width: 500px;
+    }
+    
+    .card-skill{
+        width: 500px;
+    }
+
+
+    .card-skill h4{        
+        margin-left: -125px;
+    }
+
+
+    .card-contacto{
+        width: 310px;         
+
+    }
+
+    .contacto {
+        margin-left: 20px;
+    }
+   
+    
+    
+    #footer{
+        width: 1370px;
+    }
+    
+.card:hover > .capa h2{
+    margin-top: 70px;
+    transition: all 500ms;
+    color: rgb(115, 151, 235);
+    font-size: 25px;
+
+}
+
+.card:hover > .capa h3{
+    transition: all 500ms;
+    color: yellow;
+    font-size: 25px;
+
+}
+
+.card:hover > .capa .links{
+    margin-top: 50px;
+    transition: all 500ms;
+
+}
+
+.card:hover > .capa .links a{
+    color: rgb(223, 102, 245);
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.card .capa .links a:hover{
+    font-size: 25px;
+    transition: all 300ms;   
+
+}
+
+.card .capa .links a:active{
+    font-size: 15px;
+
+}
+
+
+
+    
+}
+
+@media (max-width: 900px){
+    #header{
+        height: 110px;
+    }
+    #contenido-imagen{
+        width: 1950px;
+
+    }
+
+  
+    #contenido-header .titulo1 {
+       font-size: 60px;
+    }
+
+    
+    #navegador ul{        
+        width: 1100px;
+        margin-top: 25px;
+    }
+
+    #navegador ul li a{        
+        font-size: 40px;        
+    }
+
+
+    #navegador ul li a:active{        
+        font-size: 35px;
+        color: rgb(66, 92, 153);
+
+        
+    }
+
+    #contenedor{
+        margin-left: 415px;
+    }    
+
+    #contenedor .info h1,
+    #contenedor .skills h1  {
+        width: 500px;
+        font-size: 50px;
+        margin-left: 325px;
+    }
+
+    #contenedor .info h4,
+    #contenedor .skills h4,
+    #contenedor .contacto h4{
+        text-align: center;
+    }
+
+    #contenedor .info span,
+    #contenedor .skills span,
+    #contenedor .contacto span {
+        margin-top: 2px;
+    }
+    #contenedor .info h4,
+    #contenedor .skills h4,
+    #contenedor .contacto h4 {
+        width: 750px;
+        font-size: 35px;
+        margin-right: 255px;
+        
+    }
+
+    #contenedor .skills h1 {
+        width: 391px;
+        margin-left: 355px;
+    }
+    #contenedor .skills h4 {
+        width: 750px;
+        
+    }
+
+    #contenedor .contacto h1 {
+        width: 351px;
+        margin-left: 335px;
+    }
+    #contenedor .contacto h4 {
+        width: 750px;
+        
+    }
+    #cards {
+        width: 750px;        
+        margin-left: 220px;       
+    }
+    #card-skills{
+        width: 750px;        
+        margin-left: 280px;    
+    }
+    #card-contactos{
+        width: 450px;      
+        margin-left: 350px;
+    }
+    .card-contacto{
+        margin-bottom: -120px;
+
+    }
+
+    .card {
+        width: 650px;
+        height: 500px;
+    }   
+    
+    .card-skill{
+        width: 500px;
+        font-size: 20px;
+    }
+    #contenedor .card-contacto{
+        width: 364px;
+        height: 405px;
+        margin-bottom: 100px;
+        font-size: 20px;
+        margin-left: -10px;
+    }   
+
+    #contenedor .card-contacto h3{        
+        font-size: 50px;
+    }   
+
+    
+
+    
+
+
+    .card-contacto{
+        width: 310px;         
+
+    }
+
+    .contacto {
+        margin-left: 20px;
+    }
+   
+    
+    
+    #footer{
+      
+        margin-top: 20px;
+        width: 1950px;
+        height: 110px;
+
+        text-align: center;
+
+    }
+
+    #footer p{
+      font-size: 40px;     
+      width: 900px;
+      padding: 30px;
+    }
+
+
+
+    #card-skills {
+        margin-left: 250px;
+    }
+
+    #contenedor .cardimagen{
+        width: 324px;
+        height: 305px;
+    }
+
+    #card-skills .card-skill {
+        width: 550px;
+        height: 495px;        
+    }
+
+
+    #card-skills .card-skill h4{
+        font-size: 60px;
+      margin-left: -100px;              
+    }
+
+    #card-skills .card-skill p{
+        display: none;
+
+    }
+
+    .arriba{
+    position: fixed;
+	bottom:190px;
+    font-size: 150px;
+	right:60px;
+    }
+
+    
+
+    
+.card:hover > .capa h2{
+    margin-top: 100px;
+    transition: all 500ms;
+    color: rgb(115, 151, 235);
+    font-size: 40px;
+
+}
+
+.card:hover > .capa h3{
+    transition: all 500ms;
+    color: yellow;
+    font-size: 40px;
+
+}
+
+.card:hover > .capa .links{
+    margin-top: 150px;
+    transition: all 500ms;
+
+}
+
+.card:hover > .capa .links a{
+    color: rgb(223, 102, 245);
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+.card .capa .links a:hover{
+    font-size: 50px;
+    transition: all 300ms;   
+
+}
+
+.card .capa .links a:active{
+    font-size: 30px;
+
+}
+
+
+
+}
+
+@media (max-width: 472px){
+    #contenido-header .titulo1 {
+        font-size: 38px;
+        margin-top: 25px;
+     }
+    
+ 
+     
+     
+
+}
