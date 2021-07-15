@@ -71,6 +71,26 @@ body::-webkit-scrollbar-thumb{
     height: 50px;
 
 }
+#contenedor .solicitar-boton{
+    margin-left: 10px;
+}
+
+
+.solicitar-boton:hover{
+    cursor: pointer !important;
+    background-color: rgb(8, 98, 8);
+}
+.btn-menu{
+    margin-top: 8px;
+    float: left;
+}
+.icon-menu{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 
 #contenido-header .titulo1 {
     color: white;
@@ -172,34 +192,359 @@ body::-webkit-scrollbar-thumb{
     
 }
 
-/*Contenedor*/
-#titulo_section{
-    margin-top: 100px !important ;
-    margin-left: 210px;
+/*Barra lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~.container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background-color: rgba(10, 10, 10, 0.5);
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+
 }
 
-#titulo_section h1{
-    color: rgb(59, 57, 57);
+.cont-menu nav{
+    margin-top: 40px;
+    transform:  translateY(15%);
 }
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border-left: 5px solid transparent;
+    transition: all 300ms ease;
+}
+
+.cont-menu nav a:hover{    
+    border-left: 5px solid #c7c7c7;
+    color: white;    
+    transition: all 300ms ease;
+    background: #353434;
+}
+
+.cont-menu .cerrar{
+    position: absolute;
+    right: 7px;
+    top: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/*Contenedor*/
+#titulo-section{
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+#titulo-section h1{
+    color: rgb(53, 147, 224);
+}
+
 
 #contenedor{
     margin-top: 20px !important;
     margin-left: 100px;
-    width: 1450px;    
+    width: 1600px;
+    height: 700px;
     margin: auto;
-    padding: 20px 30px;  
+    padding: 20px 30px;
+    border-top: 4px solid rgb(43, 160, 255);
+    color: white;   
     margin-bottom: 50px;
-    height: 600px;
 
 }
 #contenedor .imagentable{
-    width: 120px;
+    width: 25px;
+    height: 25px;
+    float: left ;
 }
 
-#contenedor .imagentable2{
-    width: 50px;
-    margin-left: 30px;
+
+
+table {
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 2px 5px 3px rgb(53, 51, 51, 0.6);
+    margin-bottom: 60px;
 }
+
+th, td {
+    padding: 20px;
+    font-weight: bold;
+    color:white;
+}
+td{
+    color: black;
+}
+
+#contenedor .reunion{
+    padding: 10px;
+    border-radius: 10px;    
+    color: white;
+    background-color: rgb(246, 197, 63);
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 80px;
+
+}
+
+#contenedor .solicitud{
+    padding: 10px;
+    border-radius: 10px;    
+    color: white;
+    background-color: rgb(246, 197, 63);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#contenedor .solicitud2{
+    padding: 10px;
+    border-radius: 10px;    
+    color: white;
+    background-color: rgb(246, 78, 63);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#contenedor .solicitud2:hover{    
+    background-color: rgb(209, 38, 23);    
+
+}
+
+.basura {
+    width: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+/*POPUP*/
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    
+}
+
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;   
+
+}
+
+.overlay3{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    
+}
+
+
+.overlay.active{
+    visibility: visible;
+}
+.overlay2.active{
+    visibility: visible;
+}
+
+.overlay3.active{
+    visibility: visible;
+}
+
+
+.popup {
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Monserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    
+}
+
+.popup2 {
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Monserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    
+}
+.popup3 {
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Monserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    
+}
+
+
+.popup h2{
+    font-size: 30px;
+}
+.popup2 h2{
+    font-size: 30px;
+}
+
+.popup3 h3{
+    font-size: 30px;
+}
+
+
+.popup p{
+    color: rgb(56, 55, 55);
+}
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: gray !important;
+}
+
+.popup .btn-cerrar-popup:hover{    
+    color: black !important;    
+}
+
+
+
+.popup2 p{
+    color: rgb(56, 55, 55);
+}
+.popup2 .btn-cerrar-popup2{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: gray !important;
+}
+
+
+.popup3 p{
+    color: rgb(56, 55, 55);
+}
+.popup3 .btn-cerrar-popup3{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: gray !important;
+}
+
+#button2{
+    border-radius: 20px;
+    width: 100%;    
+    background-color: rgb(98, 209, 65);
+    border: 2px solid rgb(114, 223, 52);
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.popup2 .btn-cerrar-popup2:hover{    
+    color: black !important;    
+}
+
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    
+}
+
+.overlay2.active{
+    visibility: visible;
+}
+#contenedor .reunion:hover{
+    background-color: rgb(143, 11, 219);
+    
+
+}
+
+#contenedor .solicitud:hover{    
+    background-color: rgb(211, 159, 17);    
+
+}
+
+
+thead{
+    background-color: rgb(80, 82, 79);
+    color: white;
+    border-bottom: solid 5px rgb(46, 47, 45);
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
 
 #contenedor .labels{
     width: 100%;
@@ -220,13 +565,40 @@ body::-webkit-scrollbar-thumb{
     margin-top: 10px;
     border-radius: 20px;
     width: 100%;    
-    background-color: rgb(90, 198, 248);
-    border: 2px solid rgb(90, 198, 248);
+    background-color: rgb(246, 197, 63);
+    border: 2px solid rgb(246, 197, 63);
     margin-bottom: 15px;
     padding: 11px 10px;
     color: white;
     font-weight: bold;
     font-size: 16px;
+    margin-left: 100px;
+}
+
+#button3{
+    width: 100%; 
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(251, 30, 30);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#button3:hover{    
+    background-color: rgb(182, 24, 24);
+}
+
+.popup3 h4{
+    color: black !important;
+}
+
+#contenedor .button:hover{    
+    background-color: rgb(43, 119, 20);
+    border: 2px solid rgb(43, 119, 20);
+
+    cursor: pointer;    
 }
 
 #contenedor .disabled{
@@ -240,6 +612,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #contenedor a {
+    margin-left: -100px;
     color: blue;
     font-weight: bold;
 
@@ -302,67 +675,6 @@ body::-webkit-scrollbar-thumb{
     transition: all 300ms ease-out;
 
 }
-
-table {
-    background-color: white;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    box-shadow: 2px 5px 3px rgb(53, 51, 51, 0.6);
-    margin-bottom: 60px;
-}
-
-th, td {
-    padding: 20px;
-    font-weight: bold;
-}
-
-#contenedor .reunion{
-    padding: 10px;
-    border-radius: 10px;    
-    color: white;
-    background-color: rgb(175, 79, 231);
-    margin-right: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-#contenedor .solicitud{
-    padding: 10px;
-    border-radius: 10px;    
-    color: white;
-    background-color: rgb(79, 89, 231);
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-#contenedor .reunion:hover{
-    background-color: rgb(143, 11, 219);
-    
-
-}
-
-#contenedor .solicitud:hover{    
-    background-color: rgb(64, 71, 173);    
-
-}
-
-
-thead{
-    background-color: rgb(90, 198, 248);
-    color: white;
-    border-bottom: solid 5px rgb(16, 147, 207);
-}
-
-tr:nth-child(even){
-    background-color: #ddd;
-}
-
-
 .card .capa{
     color: black;
     position: absolute;
@@ -512,109 +824,6 @@ tr:nth-child(even){
     transition: all 300ms;
     text-align: center;
 }
-
-/*POPUP*/
-.overlay{
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    
-}
-
-.overlay.active{
-    visibility: visible;
-}
-
-.popup {
-    background-color: #f8f8f8;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    font-family: 'Monserrat', sans-serif;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-    
-}
-
-
-.popup h2{
-    font-size: 30px;
-}
-
-.popup p{
-    color: rgb(56, 55, 55);
-}
-.popup .btn-cerrar-popup{
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    color: gray !important;
-}
-
-.popup .btn-cerrar-popup:hover{    
-    color: black !important;    
-}
-
-
-.overlay2{
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    
-}
-
-.overlay2.active{
-    visibility: visible;
-}
-
-.popup2 {
-    background-color: #f8f8f8;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    font-family: 'Monserrat', sans-serif;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-    
-}
-
-
-.popup2 h2{
-    font-size: 30px;
-}
-
-.popup2 p{
-    color: rgb(56, 55, 55);
-}
-.popup2 .btn-cerrar-popup2{
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    color: gray !important;
-}
-
-.popup2 .btn-cerrar-popup:hover2{    
-    color: black !important;    
-}
-
-
-/*ANIMACIONES*/
 .contacto h4{
     margin-top: 20px !important;
     margin: 0px auto;

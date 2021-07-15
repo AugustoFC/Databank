@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Databank</title>
-    <link rel="stylesheet" type="text/css" href="css/styles13.css">
+    <link rel="stylesheet" type="text/css" href="css/styles19.css">
     <link rel="icon" type="image/x-icon" href="img/icono.png">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
     <div id="main">
-        <header id="header">
+        <header id="header">            
             <div id="contenido-header">
                 <div class="btn-menu">
-                    <label for="btn-menu"><span class="icon icon-menu">o</span></label>
+                    <label for="btn-menu"><span class="icon icon-menu">n</span></label>
                 </div>
-                <a href="index.html">
+                <a href="index.html">                    
                     <h2 class="titulo1"><span class="icon">#</span> Databank</h2>
                 </a>
                 <nav id="navegador">
@@ -26,17 +26,15 @@
                         <li><a class="inicio" href="index.html"><span class="icon">Z </span>Inicio</a></li>
                         <li><a class="trabajos"><span class="icon">. </span> Solicitar Producto</a>
                             <ul>
-                                <li><a href="solicitar_prestamo.html"><span class="icon">R </span>Solicitar Prestamo</a>
-                                </li>
+                                <li><a href="solicitar_prestamo.html"><span class="icon">R </span>Solicitar Prestamo</a></li>
                                 <li><a href="solicitar_TC.html"><span class="icon">R </span>Solicitar TC</a></li>
                                 <li><a href="solicitar_TD.html"><span class="icon">R </span>Solicitar TD</a></li>
                             </ul>
                         </li>
-
-                        
+                       
                         <li><a class="conocimientos" href="Estado_Crediticio.html"><span class="icon">R </span>Estado Crediticio</a></li>
                         <li><a class="contactos" href="Comparar_Entidades.html"><span class="icon">u </span>Comparar Entidades Financieras</a></li>
-                        <li><a class="contactos" href="mis_reuniones.html"><span class="icon">P </span>Mis reuniones</a></li>   
+                        <li><a class="contactos" href="mis_reuniones.html"><span class="icon">P </span>Mis reuniones</a></li>      
 
                     </ul>
                 </nav>
@@ -44,12 +42,11 @@
                     <h2 class="titulo2"><span class="icon">U</span> Augusto Facho</h2>
                 </a>
 
-
+                
             </div>
-        </header>
-
+        </header>       
         <div class="clearfix"></div>
-                      
+                       
 
         <input type="checkbox" id="btn-menu">
         <div class="container-menu">
@@ -62,78 +59,64 @@
                 </div>             
         </div>
 
-        <div id="titulo_section">
-            <h1 style="color: rgb(77, 76, 76); ">Gestión de Tarjeta de Crédito Solicitados</h1>
-            <h2>Bienvenid@ al panel de Gestión de Tarjeta de Crédito. Has encontrado un total de (0) solicitudes pendientes.</h2>
+
+
+        <div id="titulo-section">
+            <h1>Mis Reuniones</h1>       
         </div>
-        <div class="buscar" style="background-color: white; width: 400px; padding: 10px; border-radius: 20px; border: 2px solid rgb(54, 50, 50) !important; margin-left: 230px; margin-top: 30px;"> 
+        <div class="buscar" style="background-color: white; width: 400px; padding: 10px; border-radius: 20px; border: 2px solid rgb(54, 50, 50) !important; margin-left: 150px;"> 
             <span class="icon">L</span> Buscar...
         </div>
-        <section id="contenedor">
+        <section id="contenedor">                
             <table>
                 <thead>
                     <tr>
+                        <th>Conferencia</th>
+                        <th>Operador</th>
                         <th>Entidad Financiera</th>
-                        <th>Nro.Sol TC</th>
-                        <th>Cliente</th>
-                        <th>Ver Archivos Adjuntos</th>
-                        <th>Ver Detalle</th>    
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tr>
-                    <td><img class="imagentable" src="img/scb.png"></td>
-                    <td>SBP-P001</td>
-                    <td>Brian Aguirre Carbajal</a></td>
-                    <td><a href="img/archivos_adjuntos.png"><img class="imagentable2" src="img/informe.png"></td>
-                    <td><a href="#"><img class="imagentable2" src="img/lupaa.png"></a></td>
-                    <td><a href="#"><input id="btn-abrir-popup3" class="reunion" type="submit" value="Agendar Reunion"></a><input type="submit" id="btn-abrir-popup"
-                        class="solicitud btn-abrir-popup" value="Derivar Ahora"></td>
+                    <td>C01SBP - ATENCIÓN DE PRÉSTAMO</td>
+                    <td>Sara Bravo</td>
+                    <td><div class="iconobanco"><img class="imagentable" src="img/int.png"></div> INTERBANK</td>
+                    <td>06/07/2021</td>
+                    <td>09:47 A.M</td>
+                    <td>EN PROGRESO</td>
+                    <td><a style="margin-left: 10px;" href="reunion.html" target="_blank"><input type="submit"
+                            class="solicitud btn-abrir-popup" value="Únirse Ahora"></a>
+                            <input type="submit" id="btn-abrir-popup" class="solicitud2 btn-abrir-popup" value="reprogramar">
+                            <img id="btn-abrir-popup3" class="basura btn-abrir-popup3" src="img/basura.png">
+
+                        </td>
                 </tr>
                 <tr>
-                    <td><img class="imagentable" src="img/scb.png"></td>
-                    <td>SBP-P001</td>
-                    <td>Arantxa de La Fuente</td>
-                    <td><a href="img/archivos_adjuntos.png"><img class="imagentable2" src="img/informe.png"></td>
-                    <td><a href="#"><img class="imagentable2" src="img/lupaa.png"></a></td>
-                    <td><a href="#"><input id="btn-abrir-popup4" class="reunion btn-abrir-popup2" type="submit" value="Agendar Reunion"></a><input type="submit" id="btn-abrir-popup2"
-                            class="solicitud btn-abrir-popup2" value="Derivar Ahora"></td>
+                    <td>C01SBP - ATENCIÓN DE PRÉSTAMO</td>
+                    <td>Sara Bravo</td>
+                    <td><div class="iconobanco"><img class="imagentable" src="img/sbp.png"></div>SCOTIABANK</td>
+                    <td>06/07/2021</td>
+                    <td>09:47 A.M</td>
+                    <td>EN PROGRESO</td>
+                    <td><a style="margin-left: 10px;" href="reunion.html" target="_blank"><input type="submit" 
+                            class="solicitud btn-abrir-popup" value="Únirse Ahora"></a>
+                        <input type="submit" id="btn-abrir-popup2"
+                        class="solicitud2 btn-abrir-popup2" value="reprogramar">
+                        <img id="btn-abrir-popup4" class="basura btn-abrir-popup4" src="img/basura.png">
+                    </td>
                 </tr>
             </table>
+            <a href="mis_reuniones.html"><button class="administrador" style="padding: 10px; margin-left: 100px; border-radius: 10px; background-color: green; color: white; font-weight: bold; text-transform: uppercase;">Modo Cliente</button></a>
 
             <br>
-
-            <a href="gestionar_financieros.html" style="margin-left: 610px;"><span class="icon">h</span>Volver atrás</a>
-            <div class="clearfix"></div>
-            <div class="overlay" id="overlay">
-                <div class="popup" id="popup">
-                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><span class="icon">'</span></a>
-                    <h2>SOLICITUD DERIVADA</h3>
-                    <br>
-                    <p>¡Has derivado una Tarjeta de Crédito con éxito!</p>
-                    <p>En estos momentos se enviará un correo con toda la información y</p>
-                    <p>detalles a su email laboral de <b>Scotiabank.</b></p>
-                    <p>En caso no hayas recibidoel correo en los próximos minutos, por favor</p>
-                    <p>revisar la carpeta <b>Spam</b> o de click en <a>Reenviar Ahora.</a></p>
-                    <br>
-                    <button id="button3">¡Muchas gracias!</button>
-                    <br>
-                    <p>De existir algún inconveniente por favor comunicarse a los</p>
-                    <p>siguientes números o correo:</p>
-                    <br>
-
-                    <h4>Email: databank_support@outlook.com</h4>
-                    <h4>Cel:   987456122</h4>
-                </div>
-            </div>
 
             <div class="overlay2" id="overlay2">
                 <div class="popup2" id="popup2">
                     <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><span class="icon">'</span></a>
-                    <h2>AGENDAR REUNION</h3>
-                    <br>
-                    <p>Nombre de la Sesión</p>
-                    <input type="text" style="margin-bottom: 15px !important; margin-top: 10px !important; padding: 10px; width: 70%;" placeholder="Ingresa el nombre de la Reunión">
+                    <h2 style="color: blue !important;">REPROGRAMAR REUNION</h3>
                     <br>
                     <p>Selecciona la fecha para la reunión:</p>
                     <br>
@@ -162,10 +145,33 @@
                 </div>
             </div>
 
+            <div class="overlay3" id="overlay3">
+                <div class="popup3" id="popup3">
+                    <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><span class="icon">'</span></a>                 
+                    <h2 style="color: red !important;">ELIMINAR REUNION</h3>
+                    <br>
+                    <p>Estás apunto de eliminar una reunión.</p>
+                    <br>
+                    <b><p>Recuerda que esta acción es irremedeable y no podrás deshacer esta acción.</p></b>
+                    <br>
+                    <p>¿Estás seguro que deseas concretar esta acción?</p>
+                    <br>
+                    <button id="button3">Confirmar Eliminar Reunión</button>
+                    <br>
+                    <br>
+                    <p>De existir algún inconveniente por favor comunicarse a los</p>
+                    <p>siguientes números o correo:</p>
+                    <br>
 
-
-
-
+                    <h4>Email: databank_support@outlook.com</h4>
+                    <h4>Cel:   987456122</h4>
+                </div>
+            </div>
+           
+           
+            
+            
+            
 
         </section>
 
@@ -177,7 +183,9 @@
             <p>Web desarollada por Augusto Facho. &copy; 2021</p>
         </footer>
     </div>
-    <script src="js/script_popup2.js"></script>
-    <script src="js/script.js"></script>
 </body>
+<script src="js/script.js"></script>
+<script src="js/script_popup3.js"></script>
+
+
 </html>

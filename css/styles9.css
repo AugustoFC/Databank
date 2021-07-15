@@ -585,7 +585,9 @@ tr:nth-child(even){
     text-transform: uppercase;
 
 }
-
+.administrador:hover{
+    background-color: rgb(182, 24, 24); 
+}
 #button3:hover{    
     background-color: rgb(182, 24, 24);
 }
