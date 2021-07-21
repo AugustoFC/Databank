@@ -13,10 +13,6 @@ btnAbrirPopup.addEventListener('click', function(){
 	popup.classList.add('active');
 });
 
-btnAbrirPopup2.addEventListener('click', function(){
-	overlay2.classList.add('active');
-	popup2.classList.add('active');
-});
 
 
 btnCerrarPopup.addEventListener('click', function(e){
@@ -25,8 +21,3 @@ btnCerrarPopup.addEventListener('click', function(e){
 	popup.classList.remove('active');
 });
 
-btnCerrarPopup2.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay2.classList.remove('active');
-	popup2.classList.remove('active');
-});
