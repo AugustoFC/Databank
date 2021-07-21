@@ -176,10 +176,13 @@ body::-webkit-scrollbar-thumb{
 #titulo_section{
     margin-top: 100px !important ;
     margin-left: 210px;
+
 }
 
 #titulo_section h1{
     color: rgb(59, 57, 57);
+    margin-right: 200px;
+    text-align: center;
 }
 
 #contenedor{
